@@ -1,0 +1,41 @@
+export type Lang = 'ja' | 'en'
+
+export const dict = {
+  ja: {
+    app: 'ひと押し質問', lead: 'よくある質問を、AIにひと押しで。', toggle: 'English',
+    edit: '編集', doneEdit: '完了', back: '← もどる', light: 'ライト', dark: 'ダーク',
+    favs: 'お気に入り', all: 'すべて', mine: 'じぶんの質問',
+    preview: 'AIに送る文（そのまま直せます）', sendTo: '送る', copy: 'コピー', share: '共有',
+    defaultAi: 'いつものAI', defaultMark: 'いつもの',
+    copied: 'コピーしました', pasteToast: 'コピーしました。開いたら貼り付けてください。',
+    shareNo: 'この端末では共有できません。コピーしました。',
+    none: '（なし）',
+    newT: '＋ 新しい質問を作る', editT: '質問を編集', icon: 'アイコン（絵文字）', titleL: '名前',
+    bodyL: '質問文', bodyHelp: '{駅} のように { } で囲んだところが入力欄になります。{now} は今の日時、{today} は今日の日付が自動で入ります。',
+    save: '保存', del: '削除', delQ: 'この質問を削除しますか？', cancel: 'やめる',
+    copyEdit: 'コピーして自分用に編集', up: '上へ', down: '下へ', star: 'お気に入り',
+    exportB: '書き出す（JSON）', importB: '読み込む（JSON）', imported: '件読み込みました', importBad: '読み込めないファイルです',
+    offline: 'オフラインでも質問文は作れます。送るときだけネットが必要です。',
+    foot: '無料・広告なし・ログイン不要。データはこの端末の中だけに保存します。答えるのはあなたが選んだAIです。',
+    autoNote: '（自動送信されます）',
+  },
+  en: {
+    app: 'One-Tap Ask', lead: 'Send ready-made questions to your AI in one tap.', toggle: '日本語',
+    edit: 'Edit', doneEdit: 'Done', back: '← Back', light: 'Light', dark: 'Dark',
+    favs: 'Favorites', all: 'All', mine: 'My questions',
+    preview: 'Prompt to send (you can edit it)', sendTo: 'Send', copy: 'Copy', share: 'Share',
+    defaultAi: 'My AI', defaultMark: 'default',
+    copied: 'Copied', pasteToast: 'Copied. Paste it when the site opens.',
+    shareNo: "Sharing isn't available here. Copied instead.",
+    none: '(none)',
+    newT: '+ Make a new question', editT: 'Edit question', icon: 'Icon (emoji)', titleL: 'Name',
+    bodyL: 'Question text', bodyHelp: 'Words in { } like {station} become fill-in boxes. {now} adds the current date and time, {today} adds today\'s date.',
+    save: 'Save', del: 'Delete', delQ: 'Delete this question?', cancel: 'Cancel',
+    copyEdit: 'Copy and edit as my own', up: 'Up', down: 'Down', star: 'Favorite',
+    exportB: 'Export (JSON)', importB: 'Import (JSON)', imported: 'imported', importBad: "Couldn't read that file",
+    offline: 'Prompts work offline. Sending needs the internet.',
+    foot: 'Free, no ads, no login. Your data stays on this device. The answers come from the AI you choose.',
+    autoNote: '(sends automatically)',
+  },
+}
+export type Dict = (typeof dict)['ja']
